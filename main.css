@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+.rootbody{
+    display: flex;
+    flex-direction: column;
+}
+.rootbody > *{
+    margin-block: 2rem;
+}
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    background: rgba(0, 24, 189, 0.8);
+    padding: 0.5rem;
+}
+.nav > *{
+    margin-inline: 2rem;
+}
+.navbuttons{
+    background: transparent;
+    color: white;
+    border: none;
+}
+.highlight{
+    font-size: 2em;
+}
+.highlight1{
+    font-size: 3em;
+}
+.heading{
+    font-size: 1.5em;
+    text-decoration: underline 0.07em;
+    font: bold;
+}
+.heading,.sub{
+    display: flex;
+    margin: 2rem;
+    width: fit-content;
+    color: black;
+    align-items: baseline;
+}
+.footer{
+    background: rgba(9, 9, 10, 0.8);
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5rem;
+    padding-block: 1rem;
+}
+.subfooter{
+    text-align: center;
+}
+.subfooter > *{
+    margin: 0.5rem;
+    font-size: 0.9em;
+}
+.sliderwindow{
+    height: 15rem;
+    background: url("https://i.ibb.co/bzxqK3s/Pngtree-abstract-technology-background-technical-electric-1252603-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.customerContact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.backgroundphoto{
+    background: url("https://i.ibb.co/Qd4cfpj/customer-Support.png");
+    width: 20rem;
+    height: 20rem;
+    background-repeat: no-repeat;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team > * {
+    margin: 1rem;
+}
+.template{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30rem;
+    padding: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    
+}
+.details{
+    text-align: left;
+}
+.photoimg{
+    width: 7rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+.name{
+    font-size: 1.5em;
+    color: black;
+}
+.Edu{
+    font-size: 1em;
+    color: grey;
+}
+.desg{
+    font-size: 1.25em;
+    color: black;
+}
+
+@media only screen and (max-width:768px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer > * {
+        margin-block: 1rem;
+    }
+    .sub1{
+        font-size: 0.8em
+    }
+    .sliderwindow{
+        width: 24rem;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .nav > * {
+        margin: 0.5rem;
+    }
+    .template{
+        width: 18rem;
+    }
+    .photoimg{
+        width: 4rem;
+        height:4rem;
+    }
+    .name{
+        font-size: 1em;
+    }
+    .Edu{
+        font-size: 0.7em;
+    }
+    .desg{
+        font-size: 0.8em;
+    }
+    .customerContact{
+        flex-direction: column;
+    }
+    
+}
