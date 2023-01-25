@@ -2,19 +2,9 @@
 let dynamicWindow=document.querySelector(".dynamicwindow");
 let buttons=document.querySelectorAll(".navbuttons");
 let temp="#homebutton";
-class detailkeeper{
-    names;
-    education;
-    designation;
-    constructor(a,b,c){
-        this.names=a;
-        this.education=b;
-        this.designation=c;
-    }
-}
 
 
-
+//Functions
 function buttonFunction(){
     if (this.id!=temp){
         document.querySelector(temp).style.background="transparent";
